@@ -34,8 +34,8 @@ const projects: Project[] = [
         ],
         category: ["Full-Stack"],
         icon: <ShoppingBag size={32} className="text-[#00f3ff]" />,
-        github: "https://github.com/manujindal009",
-        live: "https://github.com/manujindal009"
+        github: "https://github.com/manujindal009/Filora-Luxe",
+        live: "https://www.filoraluxe.in/"
     },
     {
         id: "voice2career",
@@ -54,8 +54,8 @@ const projects: Project[] = [
         ],
         category: ["Full-Stack", "Data & AI"],
         icon: <Brain size={32} className="text-[#9d00ff]" />,
-        github: "https://github.com/manujindal009",
-        live: "https://github.com/manujindal009"
+        github: "https://github.com/manujindal009/voice2career",
+        live: "https://www.voice2career.in/"
     },
     {
         id: "securesales",
