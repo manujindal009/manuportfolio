@@ -74,13 +74,13 @@ function App() {
                   <h1 className="text-2xl font-bold tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-[#00f3ff] via-[#9d00ff] to-[#ff007f] uppercase">
                     MANU JINDAL
                   </h1>
-                  <p className="text-text-secondary text-xs uppercase tracking-wider">
+                  <p className="text-zinc-400 text-xs uppercase tracking-wider">
                     SOFTWARE PORTFOLIO SYSTEM
                   </p>
                 </motion.div>
 
                 {/* Simulated Console Loaders */}
-                <div className="bg-[#121212]/90 border border-border-color/40 p-4 rounded-xl space-y-2 text-xs text-text-secondary relative z-10 shadow-2xl">
+                <div className="bg-[#121212]/90 border border-white/10 p-4 rounded-xl space-y-2 text-xs text-zinc-400 relative z-10 shadow-2xl">
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
