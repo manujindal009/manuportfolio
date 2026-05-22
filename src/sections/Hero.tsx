@@ -72,7 +72,7 @@ export function Hero() {
 
 
     return (
-        <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-transparent">
+        <section id="home" className="relative min-h-screen flex items-center justify-center pt-14 lg:pt-16 overflow-hidden bg-transparent">
 
             {/* Animated Background Gradients & Glows */}
             <div className="absolute inset-0 pointer-events-none z-0">
@@ -84,7 +84,7 @@ export function Hero() {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center md:text-left flex flex-col lg:flex-row items-center justify-between gap-16 py-12">
 
-                <div className="flex-1 w-full flex flex-col items-center md:items-start space-y-8">
+                <div className="flex-1 w-full flex flex-col items-center md:items-start space-y-5">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -96,17 +96,17 @@ export function Hero() {
                         </span>
                     </motion.div>
 
-                    <div className="space-y-4 max-w-2xl text-center md:text-left">
+                    <div className="max-w-2xl text-center md:text-left">
                         <motion.h1
                             ref={titleRef as any}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-text-primary"
+                            className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-text-primary mb-2"
                             style={{
                                 textShadow: 'var(--shadow-x, 0px) var(--shadow-y, 0px) 30px var(--accent-primary)',
                                 transition: 'text-shadow 0.1s ease-out'
-                            }}
+							}}
                         >
                             Hi, I'm <span className="text-accent-primary relative inline-block">Manu Jindal</span>
                         </motion.h1>
@@ -115,16 +115,16 @@ export function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.3 }}
-                            className="h-14 sm:h-20 flex items-center justify-center md:justify-start"
+                            className="h-8 sm:h-10 flex items-center justify-center md:justify-start mb-4"
                         >
                             <AnimatePresence mode="wait">
                                 <motion.h2
                                     key={titleIndex}
-                                    initial={{ y: 20, opacity: 0 }}
+                                    initial={{ y: 15, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
-                                    exit={{ y: -20, opacity: 0 }}
-                                    transition={{ duration: 0.5, ease: "easeOut" }}
-                                    className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-text-secondary"
+                                    exit={{ y: -15, opacity: 0 }}
+                                    transition={{ duration: 0.4, ease: "easeOut" }}
+                                    className="text-2xl md:text-3xl font-bold text-accent-primary"
                                 >
                                     {TITLES[titleIndex]}
                                 </motion.h2>
